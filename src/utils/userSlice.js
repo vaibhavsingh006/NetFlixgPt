@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 // import { addUser } from '_utils_slice__WEBPACK_IMPORTED_MODULE_6__';
 
 
-const slice = createSlice({
+const userSlice = createSlice({
     name: 'user',
     initialState: null,
     reducer: {
@@ -15,5 +15,5 @@ const slice = createSlice({
     }
 })
 
-export const { addUser, removeUser } = slice.actions;
-export default slice.reducer;
+export const { addUser, removeUser } = userSlice.actions;
+export default userSlice.reducer;

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './Header'
 import { signOut } from 'firebase/auth'
 import { auth } from '../utils/firbase'
 import { useNavigate } from 'react-router-dom'
+import useNowPlayingMovies from '../hooks/useNowPlayingMovies'
+import MainContainer from './MainContainer'
+import SecondaryContainer from './SecondaryContainer'
 
 const Browse = () => {
 
@@ -12,9 +15,15 @@ const Browse = () => {
         signOut(auth).then(() => {
             navigate('/')
         }).catch((error) => {
-            console.log('error')
+            console.log(error)
         })
     }
+
+
+    // movies api
+    useNowPlayingMovies();
+
+
 
     return (
         <div className=''>
@@ -22,6 +31,8 @@ const Browse = () => {
                 <Header />
                 <button onClick={handelSignOut} className=' cursor-pointer font-bold w-full '>Sign Out</button>
             </div>
+            <MainContainer />
+            <SecondaryContainer />
         </div>
     )
 }
