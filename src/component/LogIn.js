@@ -81,7 +81,7 @@ const LogIn = () => {
                 .then((userCredential) => {
                     // Signed in 
                     const user = userCredential.user;
-                    console.log(user)
+                    // console.log(user)
                     // ...
                     setErrMessage(null)
                     navigate('/browser')

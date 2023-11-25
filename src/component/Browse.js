@@ -29,7 +29,7 @@ const Browse = () => {
         <div className=''>
             <div className=' flex justify-between w-full'>
                 <Header />
-                <button onClick={handelSignOut} className=' cursor-pointer font-bold w-full '>Sign Out</button>
+                <button onClick={handelSignOut} className=' cursor-pointer font-bold z-20 text-white mt-8 mr-10 bg-zinc-900 px-5 py-3 w-32 rounded bg-opacity-70'>Sign Out</button>
             </div>
             <MainContainer />
             <SecondaryContainer />
