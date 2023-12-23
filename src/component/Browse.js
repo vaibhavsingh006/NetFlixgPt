@@ -4,10 +4,16 @@ import { signOut } from 'firebase/auth'
 import { auth } from '../utils/firbase'
 import { useNavigate } from 'react-router-dom'
 import useNowPlayingMovies from '../hooks/useNowPlayingMovies'
+import usePopularMovies from '../hooks/usePopularMovies'
 import MainContainer from './MainContainer'
 import SecondaryContainer from './SecondaryContainer'
+import useTopRated from '../hooks/useTopRated'
+import { useSelector } from 'react-redux'
+import GptSearch from './GptSearch'
 
 const Browse = () => {
+
+    const showGptSearch = useSelector(store => store.gpt.showGptSearch)
 
     const navigate = useNavigate();
 
@@ -23,18 +29,30 @@ const Browse = () => {
     // movies api
     useNowPlayingMovies();
 
+    // popular
+    usePopularMovies();
+
+    // TopRated
+    useTopRated();
+
+
 
 
     return (
         <div className=''>
             <div className=' flex justify-between w-full'>
                 <Header />
-                <button onClick={handelSignOut} className=' cursor-pointer font-bold z-20 text-white mt-8 mr-10 bg-zinc-900 px-5 py-3 w-32 rounded bg-opacity-70'>Sign Out</button>
+                <button onClick={handelSignOut} className=' cursor-pointer font-bold z-20 text-white mt-8 mr-10 bg-zinc-900 px-5 py-3 w-40 sm:w-32 rounded bg-opacity-70'>Sign Out</button>
             </div>
-            <MainContainer />
-            <SecondaryContainer />
+            {
+                showGptSearch ? <GptSearch /> : <>
+                    <MainContainer />
+                    <SecondaryContainer />
+                </>
+            }
+
         </div>
     )
 }
 
-export default Browse
+export default Browse;
