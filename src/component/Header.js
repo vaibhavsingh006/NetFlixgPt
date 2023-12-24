@@ -21,11 +21,11 @@ const Header = () => {
 
     return (
         <header className=' w-full relative'>
-            <div className='absolute h-14 mt-6 ml-6 z-20'>
+            <div className='absolute h-8 sm:h-14 mt-10 sm:mt-6 ml-6 z-20'>
                 <img className='w-full h-full' src={logo} alt="logo" />
             </div>
 
-            <div className=' absolute right-6 flex justify-center z-20  top-8'>
+            <div className=' absolute -right-32 sm:right-6 flex justify-center z-20 top-28  sm:top-8'>
                 {
                     showGptSearch && <select className=" mr-8 border border-gray" onChange={handelLanguage}>
                         {SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifire} value={lang.identifire}>{lang.name}</option>)}

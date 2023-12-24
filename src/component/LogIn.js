@@ -108,7 +108,7 @@ const LogIn = () => {
             <div className=" w-full h-full">
                 <form
                     onSubmit={(e) => e.preventDefault()}
-                    className=" bg-black bg-opacity-80 absolute left-1/3 top-32 p-14 w-1/3 px-16 rounded-lg"
+                    className=" bg-black bg-opacity-80 absolute mx-8 sm:m-0 sm:left-1/4 lg:left-1/3 top-32 p-14 sm:w-1/2 lg:w-1/3 px-8 sm:px-16 rounded-lg"
                 >
                     <h2 className=" text-white font-bold text-2xl mb-4">{isSign}</h2>
                     <div className=" gap-4 flex flex-col">
