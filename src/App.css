@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .box {
-    width: 23%;
+    width: 40%;
     height: max-content;
 }
 
@@ -24,9 +24,21 @@
     height: 229vh;
 }
 
+.LogIn {
+    width: 200%;
+}
+
 
 @media (min-width:640px) {
     .listKpiche {
         height: 297vh;
+    }
+
+    .box {
+        width: 23%;
+    }
+
+    .LogIn {
+        width: auto;
     }
 }

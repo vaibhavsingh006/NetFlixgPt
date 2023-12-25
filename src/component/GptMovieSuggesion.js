@@ -10,7 +10,7 @@ const GptMovieSuggesion = () => {
 
     console.log(movieRsults.poster_path)
     return (
-        <div className=' text-black flex gap-16 my-20 flex-wrap'>
+        <div className=' text-black flex gap-8 sm:gap-16 my-20 flex-wrap'>
             {movieRsults?.gptMovies?.map((movie) => (
 
                 <div className=" border-black shadow shadow-black rounded bg-gray-200 p-3 box my-0 mx-auto" key={movie.id}>
