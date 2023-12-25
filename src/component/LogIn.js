@@ -96,7 +96,7 @@ const LogIn = () => {
     };
 
     const handelSign = () => {
-        setIsSign(isSign === "Log In" ? "Sign up" : "Log In");
+        setIsSign(isSign === "LogMEIn" ? "Sign up" : "Log In");
     };
 
     return (
