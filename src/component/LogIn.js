@@ -96,7 +96,7 @@ const LogIn = () => {
     };
 
     const handelSign = () => {
-        setIsSign(isSign === "LogMEIn" ? "Sign up" : "Log In");
+        setIsSign(isSign === "Log In" ? "Sign up" : "Log In");
     };
 
     return (
@@ -153,7 +153,7 @@ const LogIn = () => {
                         </button>
                         <div className=" flex gap-1 mt-1 text-white">
                             <input type="checkbox" />
-                            <p>Remember me</p>
+                            <p>Don't Remember me</p>
                         </div>
                         <p className="text-white cursor-pointer" onClick={handelSign}>
                             {isSign === "Log In"
