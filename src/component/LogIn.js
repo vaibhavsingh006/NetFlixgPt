@@ -105,10 +105,10 @@ const LogIn = () => {
             <div className=" h-screen relative LogIn">
                 <img className=" h-full w-full" src={bg} alt="background" />
             </div>
-            <div className=" w-full h-full">
+            <div className=" formKeUper">
                 <form
                     onSubmit={(e) => e.preventDefault()}
-                    className=" bg-black bg-opacity-80 absolute mx-8 sm:m-0 sm:left-1/4 lg:left-1/3 top-32 p-10 sm:w-1/2 lg:w-1/3 px-8 sm:px-16 rounded-lg"
+                    className=" bg-black bg-opacity-80 absolute mx-8 sm:m-0 sm:left-auto lg:left-auto top-auto p-10 sm:w-1/2 lg:w-2/6 lg:py-12 px-8 sm:px-16 rounded-lg"
                 >
                     <h2 className=" text-white font-bold text-2xl mb-4">{isSign}</h2>
                     <div className=" gap-4 flex flex-col">

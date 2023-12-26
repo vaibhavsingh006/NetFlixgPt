@@ -21,17 +21,37 @@
 }
 
 .listKpiche {
-    height: 229vh;
+    height: 173vh;
+    padding-left: 15px;
 }
 
 .LogIn {
     width: 200%;
 }
 
+.formKeUper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleKaHead {
+    height: 101vh;
+}
+
+.iFrame {
+    height: 65vh;
+    width: 100%;
+}
+
 
 @media (min-width:640px) {
     .listKpiche {
-        height: 297vh;
+        height: 270vh;
     }
 
     .box {
