@@ -65,8 +65,8 @@ const LogIn = () => {
                     // end user profile update
                     // console.log(user)
                     // ...
-                    // setErrMessage(null)
-                    // navigate('/browser')
+                    setErrMessage(null)
+                    navigate('/browser')
                 })
                 .catch((error) => {
                     const errorCode = error.code;
@@ -108,7 +108,7 @@ const LogIn = () => {
             <div className=" formKeUper">
                 <form
                     onSubmit={(e) => e.preventDefault()}
-                    className=" bg-black bg-opacity-80 absolute mx-8 sm:m-0 sm:left-auto lg:left-auto top-auto p-10 sm:w-1/2 lg:w-2/6 lg:py-12 px-8 sm:px-16 rounded-lg"
+                    className=" bg-black bg-opacity-80 z-30 absolute mx-8 sm:m-0 sm:left-auto lg:left-auto top-auto p-10 w-10/12 sm:w-1/2 lg:w-2/6 lg:py-12 px-8 sm:px-16 rounded-lg"
                 >
                     <h2 className=" text-white font-bold text-2xl mb-4">{isSign}</h2>
                     <div className=" gap-4 flex flex-col">

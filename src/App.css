@@ -21,12 +21,14 @@
 }
 
 .listKpiche {
-    height: 173vh;
+    height: 190vh;
     padding-left: 15px;
 }
 
 .LogIn {
     width: 200%;
+    position: relative;
+    z-index: 20;
 }
 
 .formKeUper {
@@ -51,7 +53,7 @@
 
 @media (min-width:640px) {
     .listKpiche {
-        height: 270vh;
+        height: 300vh;
     }
 
     .box {

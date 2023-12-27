@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <header className=' w-full relative'>
-            <div className='absolute h-8 sm:h-14 mt-10 sm:mt-6 ml-6 z-20'>
+            <div className='absolute h-8 sm:h-14 mt-10 sm:mt-6 ml-6 z-20 z-30'>
                 <img className='w-full h-full' src={logo} alt="logo" />
             </div>
 
