@@ -56,7 +56,7 @@ const GptSearch = () => {
 
     return movies?.NowPlayingMovies && (
         <div>
-            <div className="z-20 w-full flex justify-center mt-16 relative sm:top-0 top-12">
+            <div className="z-20 w-full flex justify-center mt-16 relative sm:top-14 top-12">
                 <div className="flex gap-6 sm:w-5/12 w-5/6">
                     <input ref={searchText} type="text" placeholder={lang[langKey].gptSearchPlaceholder} className=" border-black border py-2 pl-1 rounded w-full" />
                     <button className="font-bold bg-red-600 text-white px-4 rounded" onClick={handleGptSearchClick}>{lang[langKey].search}</button>

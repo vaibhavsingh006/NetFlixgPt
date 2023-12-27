@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .box {
-    width: 40%;
+    width: 43%;
     height: max-content;
 }
 
@@ -42,11 +42,11 @@
 }
 
 .titleKaHead {
-    height: 101vh;
+    height: 91vh;
 }
 
 .iFrame {
-    height: 65vh;
+    height: 50vh;
     width: 100%;
 }
 

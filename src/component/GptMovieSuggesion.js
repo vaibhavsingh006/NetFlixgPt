@@ -8,7 +8,7 @@ const GptMovieSuggesion = () => {
     // console.log(lastOne)
     // console.log(movieRsults.gptMovies[0].overview)
 
-    console.log(movieRsults.poster_path)
+    console.log(movieRsults)
     return (
         <div className=' text-black flex gap-8 sm:gap-16 my-20 flex-wrap'>
             {movieRsults?.gptMovies?.map((movie) => (
