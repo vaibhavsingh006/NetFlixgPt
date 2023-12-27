@@ -50,6 +50,10 @@
     width: 100%;
 }
 
+.header {
+    width: 132%;
+}
+
 
 @media (min-width:640px) {
     .listKpiche {

@@ -42,7 +42,9 @@ const Browse = () => {
         <div className=''>
             <div className=' flex justify-between w-full'>
                 <Header />
-                <button onClick={handelSignOut} className=' cursor-pointer font-bold z-20 text-white mt-8 mr-10 bg-zinc-900 px-4 sm:px-5 py-3 w-40 sm:w-32 rounded bg-opacity-70 relative left-6 sm:left-0'>Sign Out</button>
+                {
+                    showGptSearch ? '' : <button onClick={handelSignOut} className=' cursor-pointer font-bold z-20 text-white mt-8 mr-8 sm:mr-10 bg-zinc-900 px-2 sm:px-5 py-3 w-40 sm:w-32 rounded bg-opacity-70 relative left-6 sm:left-0'>Sign Out</button>
+                }
             </div>
             {
                 showGptSearch ? <GptSearch /> : <>
