@@ -16,7 +16,7 @@ const GptMovieSuggesion = () => {
     // console.log(filterM)
 
 
-    return (
+    return (filterResult ?
         <div className=' text-black flex gap-8 sm:gap-16 my-20 flex-wrap'>
             {filterResult.map((movie) => (
 
@@ -28,7 +28,7 @@ const GptMovieSuggesion = () => {
                     <h2>{movie.release_date}</h2>
                 </div>
             ))}
-        </div >
+        </div > : ''
     )
 }
 
