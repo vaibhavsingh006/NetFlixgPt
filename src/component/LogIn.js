@@ -103,7 +103,7 @@ const LogIn = () => {
         <div className=" overflow-hidden">
             <Header />
             <div className=" h-screen relative LogIn">
-                <img className=" h-full w-full" src={bg} alt="background" />
+                <img className=" object-cover h-full w-full" src={bg} alt="background" />
             </div>
             <div className=" formKeUper">
                 <form
